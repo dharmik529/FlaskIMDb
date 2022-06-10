@@ -1,0 +1,107 @@
+.btn {
+    background-color: #c65aa3;
+    color: black;
+    text-shadow: 0px 0px black;
+}
+
+body {
+    background-color: #1a212b;
+    font-family: "Space Mono", monospace;
+    color: #37d3c8;
+    text-shadow: 0.5px 0.5px black;
+    transition: background-color .5s;
+}
+
+hr {
+    border: 2px solid #b9b9b9;
+    border-radius: 4px;
+}
+
+h1 {
+    font-size: 50px; 
+    text-shadow: 0.5px 0.5px black;
+}
+
+
+.box {
+    width: 120px;
+    height: 60px;
+    margin-bottom: 10px;
+    border: 2px solid #37d3c8;
+    background-color: #c38d9e;
+}
+
+.box1 {
+    /* width: 162px;
+    height: 119px;
+    margin-bottom: 10px; */
+    border: 2px solid #b9b9b9;
+}
+
+.pallet1 {
+    width: 600px;
+    height: 300px;
+    border: 2px solid #37d3c8;
+}
+
+#menu-outer {
+    height: 84px;
+    background: url() repeat-x;
+}
+
+.table {
+    display: table;
+    margin: 0 auto;
+}
+
+
+ul#horizontal {
+    min-width: 696px;
+    list-style: none;
+    padding-top: 20px;
+}
+
+ul#horizontal li {
+    display: inline;
+}
+
+.pdf{
+margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+.Add{
+    display: inline;
+}
+
+.addN{
+    text-decoration: none;
+    float: right;
+    font-size: 1.5em;
+    color: #37d3c8;
+    padding: 10px;
+}
+
+.addR{
+    text-decoration: none;
+    float: right;
+    font-size: 1.5em;
+    color: #37d3c8;
+    padding: 10px;
+}
+
+.Add div{
+    text-decoration: none;
+    /* text-align: center; */
+    /* float: center; */
+    /* font-weight: bold; */
+    font-size: 1.5em;
+    color: #37d3c8;
+    display: block;
+}
+
+#nocolor{
+    color: transparent;
+  }

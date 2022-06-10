@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Dharmik Patel</title>
+        <meta name="description" content="Add stuff here!">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='Poster.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='animatedburger.css') }}">
+    </head>
+
+    <body>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="dhamu.xyz.index.html">HOME</a>
+            <a href="dhamu.xyz.projects.html">PROJECTS</a>
+            <a href="dhamu.xyz.resume.html">RESUME</a>
+            <a href="dhamu.xyz.css-fun.html">CSS</a>
+            <a href="https://jellyfin.dhamu.xyz" target="_blank">Jellyfin</a>
+            <a href="index.html" class="activenav">WATCHED</a>
+        </div>
+
+        <div id="main">
+            <div class="burgbody">
+                <span id="borger" class="wrapper" style="font-size:30px;cursor:pointer" onclick="openNav()">
+                  <div class="line-menu half start"></div>
+                  <div class="line-menu"></div>
+                  <div class="line-menu half end"></div>
+                </span>
+            </div>
+            <h1>Dharmik Patel</h1>
+            <hr>
+            <div class="Add">
+                <div>
+                    <h2>WATCHED</h2>
+                </div>
+        <!-- <a href="search" class="addN">NEW</a>--> 
+            </div>
+             <div>
+                <ul class="Results" id="no-bullets">
+                {% for item in data %}
+                <li id="choice1">
+                    <img src="{{item[2]}}" id="imgchoice1">
+                    <marquee behavior="scroll" direction="left">{{item[1]}}</marquee>
+                    <p>{{item[3]}}</p>
+                </li>
+                {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="Results">
+
+        </div>
+        
+
+        <script src="{{url_for('static', filename='sidenav.js')}}"></script>
+        <script src="{{url_for('static', filename='IMDB.js')}}"></script>
+    </body>
+    
+</html>
