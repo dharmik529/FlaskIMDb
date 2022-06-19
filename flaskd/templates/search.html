@@ -52,17 +52,17 @@
                 
                 <li id="choice1">
                     <form action="{{url_for('create1')}}" method="POST">
-                        <img src="{{item.image}}" id="imgchoice1">
+                        <input type="image" src="{{item.image}}" id="imgchoice1" name="submit" alt="submit" class="IMGButt"></input>
                         <input type="hidden" name="title" value="{{item.title}}"></input>
                         <marquee behavior="scroll" direction="left">{{item.title}}</marquee>
                         <input type="text" name="IMDbID" value="{{item.id}}" class="searchInput"></input>
                         <input type="text" name="description" value="{{item.description}}" class="searchInput"></input>
                         <input type="hidden" name="poster" value="{{item.image}}" class="searchInput"></input>
-                        <button type="submit" class="searchButton" id="addButton">
+                        <!--<button type="submit" class="searchButton" id="addButton">
                             <i class="material-icons">
                                 add
                             </i>
-                        </button>
+</button>-->
                     </form>
                 </li>
                 {% endfor %}
