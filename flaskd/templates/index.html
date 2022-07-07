@@ -5,10 +5,14 @@
 
         <title>Watched</title>
         <meta name="description" content="Add stuff here!">
-        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='Poster.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='animatedburger.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')
+            }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='nav.css')
+            }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='Poster.css')
+            }}">
+        <link rel="stylesheet" href="{{ url_for('static',
+            filename='animatedburger.css') }}">
     </head>
 
     <body>
@@ -24,36 +28,37 @@
 
         <div id="main">
             <div class="burgbody">
-                <span id="borger" class="wrapper" style="font-size:30px;cursor:pointer" onclick="openNav()">
-                  <div class="line-menu half start"></div>
-                  <div class="line-menu"></div>
-                  <div class="line-menu half end"></div>
+                <span id="borger" class="wrapper"
+                    style="font-size:30px;cursor:pointer" onclick="openNav()">
+                    <div class="line-menu half start"></div>
+                    <div class="line-menu"></div>
+                    <div class="line-menu half end"></div>
                 </span>
             </div>
             <h1>WATCHED</h1>
             <hr>
             <div class="Add">
-        <!-- <a href="search" class="addN">NEW</a>--> 
+                <!-- <a href="search" class="addN">NEW</a>-->
             </div>
-             <div>
+            <div>
                 <ul class="Results" id="no-bullets">
-                {% for item in data %}
-                <li id="choice1">
-                    <img src="{{item[2]}}" id="imgchoice1">
-                    <marquee behavior="scroll" direction="left">{{item[1]}}</marquee>
-                    <p>{{item[3]}}</p>
-                </li>
-                {% endfor %}
+                    {% for item in data %}
+                    <li id="choice1">
+                        <img src="{{item[2]}}" id="imgchoice1">
+                        <marquee behavior="scroll" direction="left">{{item[1]}}</marquee>
+                        <p>{{item[3]}}</p>
+                    </li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
         <div class="Results">
 
         </div>
-        
+
 
         <script src="{{url_for('static', filename='sidenav.js')}}"></script>
         <script src="{{url_for('static', filename='IMDB.js')}}"></script>
     </body>
-    
+
 </html>
